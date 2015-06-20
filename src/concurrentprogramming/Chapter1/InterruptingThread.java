@@ -18,7 +18,7 @@ public class InterruptingThread extends Thread {
                 System.out.println("Prime num" +num);
             }
             if(Thread.interrupted()){
-                System.out.println("Interrupted");
+                System.out.println(" Task Interrupted");
                 return;
             }
             num++;
@@ -30,7 +30,7 @@ public class InterruptingThread extends Thread {
            return true;       
        } 
    for(int i =2 ;i<num;i++){
-       if (i%num == 0)
+       if (num % i == 0)
            return false;      
    }
          return true;
