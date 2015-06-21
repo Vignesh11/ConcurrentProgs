@@ -72,19 +72,18 @@ class PrinterMachines {
             }
         }
 }
-
 class PrinterMan implements Runnable {
-    private PrinterMachines machine;
+    private PrinterMachines machines;
     private Object job;
     
-    public PrinterMan(PrinterMachines machine){
-       this.machine = machine;
+    public PrinterMan(PrinterMachines machines){
+       this.machines = machines;
        job = new Object();
        
     }
     @Override
     public void run(){   
-        machine.printJob(job);
+        machines.printJob(job);
         
     }
 }
