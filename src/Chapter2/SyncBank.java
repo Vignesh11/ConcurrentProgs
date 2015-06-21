@@ -28,10 +28,8 @@ public class SyncBank {
             Logger.getLogger(SyncBank.class.getName()).log(Level.SEVERE, null, ex);
         }
      System.out.println("Final balance of " +acc.getAccName()+ " is " + acc.getBalance());       
-    }
-    
+    }   
 }
-
 
 class Account {
     private String accName;
