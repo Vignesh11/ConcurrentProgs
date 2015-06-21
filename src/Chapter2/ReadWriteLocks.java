@@ -14,7 +14,6 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @author Vignesh
  */
 public class ReadWriteLocks {
-    
     public static void main(String[] args) {
         Product p = new Product();
         Reader r = new Reader(p);
@@ -24,13 +23,9 @@ public class ReadWriteLocks {
             t.start();
         }
         Thread t2 = new Thread(w);
-        t2.start();
-        
-    }
-    
+        t2.start();   
+    }   
 }
-
-
 class Product {
     private int prod1;
     private int prod2;
