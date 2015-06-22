@@ -42,7 +42,7 @@ class testCDL implements Runnable {
         this.cdl = cdl;
     }
     public void run(){
-        System.out.println("Thread Start" +cdl.getCount());
+        System.out.println("Thread Starting" +cdl.getCount());
         try {    
             Thread.sleep(500);
         } catch (InterruptedException ex) {
